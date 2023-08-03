@@ -1,0 +1,139 @@
+.productCard {
+    margin: 20px 10px;
+
+    width: 300px;
+    height: 500px;
+
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 210px 40px;
+    grid-template-areas: 
+    "card-header"
+    "card-body"
+    "card-footer"
+    ;
+
+    color: black;
+    background-color: white;
+    box-shadow:  0 0 50px #000000;
+    border-radius: 10px;
+}
+
+.productCard .cardHeader {
+    grid-area: card-header;
+}
+
+.productCard .cardHeader .headerImg {
+    height: 200px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 10px 10px 0px 0px;
+}
+
+.productCard .cardHeader .headerTitle {
+    height: 50px;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+    background-color: #1b1b1b;
+}
+
+.productCard .cardBody {
+    padding: 30px 0px;
+
+    position: relative;
+    display: flex;
+    grid-area: card-body;
+    align-items: center;
+    flex-direction: column;
+}
+
+.productCard .cardBody .bodyPrice {
+    color: #D83953;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    transform: scaleY(1.5);
+}
+
+.productCard .cardBody .bodyTitle {
+    margin: 12px 0px;
+
+    color: #333;
+}
+
+.productCard .cardBody .bodyPlatforms {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.productCard .cardBody .bodyPlatforms .platformItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.productCard .cardBody .bodyPlatforms .platformItem .platformImg {
+    width: 25px;
+    height: 25px;
+    padding: 8px;
+    transition: all 0.2s ease;
+    border-radius: 10px; 
+    border: 3px solid white;
+}
+
+.productCard .cardBody .bodyPlatforms .platformItem .platformImg:hover {
+    border: 3px solid #D83953;
+    cursor: pointer;
+}
+
+.productCard .cardFooter {
+    grid-area: card-footer;
+}
+
+.productCard .cardFooter .footerButton {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    background-color: #D83953;
+
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.productCard .cardFooter .footerButton:hover {
+    box-shadow: 3px 3px 25px #D83953;
+}
+
+.productCard .cardFooter .footerButton i {
+    margin-right: 10px;
+    font-size: 14px;
+}
